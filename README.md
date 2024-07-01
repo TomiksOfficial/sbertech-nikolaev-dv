@@ -1,1 +1,1 @@
-# sberBase
+# SberTech Practice
