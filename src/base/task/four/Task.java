@@ -1,4 +1,4 @@
-package task.four;
+package base.task.four;
 
 public class Task {
     public static void doTask(int n, int m) {

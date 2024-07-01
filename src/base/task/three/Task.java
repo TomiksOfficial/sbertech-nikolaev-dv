@@ -1,4 +1,4 @@
-package task.three;
+package base.task.three;
 
 public class Task {
     private static boolean checkPrime(int n) {
