@@ -1,6 +1,6 @@
 package base.task.two;
 
-public final class Task {
+public class Task {
     public static void doTask() {
         int maxNumber = Integer.MIN_VALUE;
         int avgValue = 0;
