@@ -1,6 +1,6 @@
 package base.task.three;
 
-public class Task {
+public final class Task {
     private static boolean checkPrime(int n) {
         for (int i = 2; i < n; i++) {
             if (n % i == 0) {

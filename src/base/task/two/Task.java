@@ -1,9 +1,9 @@
 package base.task.two;
 
-public class Task {
+public final class Task {
     public static void doTask() {
         int maxNumber = Integer.MIN_VALUE;
-        int minNumber = Integer.MAX_VALUE;
+        int avgValue = 0;
 
         int[] arr = new int[10];
 
@@ -16,14 +16,12 @@ public class Task {
                 maxNumber = arr[i];
             }
 
-            if (arr[i] < minNumber) {
-                minNumber = arr[i];
-            }
+            avgValue += arr[i];
         }
 
-        System.out.println("");
+        System.out.println();
 
         System.out.println("Max number: " + maxNumber);
-        System.out.println("Min number: " + minNumber);
+        System.out.println("Average value: " + avgValue / 1.0 / arr.length);
     }
 }
