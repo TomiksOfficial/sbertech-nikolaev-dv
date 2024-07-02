@@ -4,3 +4,5 @@ out/
 !**/src/test/**/out/
 
 .idea/
+
+sberBase.iml
