@@ -9,7 +9,7 @@ public class Main {
             Выполнение задания 1
          */
         System.out.println("-- First Task --");
-        base.task.two.Task.doTask();
+        base.task.one.Task.doTask();
 
         /*
             Выполнение задания 2

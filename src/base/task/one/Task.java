@@ -5,5 +5,7 @@ public final class Task {
         for(int i = 1; i <= 14; i++) {
             System.out.print(7*i + "\t");
         }
+
+        System.out.println();
     }
 }
