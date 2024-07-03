@@ -1,4 +1,4 @@
-package base.task.one;
+package tomiks.task.one;
 
 public class Task {
     public static void doTask() {

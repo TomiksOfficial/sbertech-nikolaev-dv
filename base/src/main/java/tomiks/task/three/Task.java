@@ -1,4 +1,4 @@
-package base.task.three;
+package tomiks.task.three;
 
 public class Task {
     private static boolean checkPrime(int n) {
