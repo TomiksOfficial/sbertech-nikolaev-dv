@@ -1,12 +1,13 @@
 package tomiks.task.one;
 
+import lombok.SneakyThrows;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.lang.reflect.Method;
 
-class CalculatorTest {
+public class CalculatorTest {
 
     @Test
     void sumNumbersTest() {
@@ -54,16 +55,15 @@ class CalculatorTest {
     }
 
     @Test
+    @SneakyThrows
     void privateMethodWithReflectionTest() {
         final double EXPECTED = 8.0;
 
         Calculator calculator = new Calculator(new Arithmetic());
 
-        try {
-            Method method = calculator.getClass().getDeclaredMethod("pow", double.class, double.class);
-            method.setAccessible(true);
-            Assertions.assertThat(method.invoke(calculator, 2, 3)).isEqualTo(EXPECTED);
-        } catch (Exception ignored) {}
+        Method method = calculator.getClass().getDeclaredMethod("pow", double.class, double.class);
+        method.setAccessible(true);
+        Assertions.assertThat(method.invoke(calculator, 2, 3)).isEqualTo(EXPECTED);
 
     }
 

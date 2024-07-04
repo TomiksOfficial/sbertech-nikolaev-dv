@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class Calculator {
 
-    public Arithmetic arithmetic;
+    private Arithmetic arithmetic;
 
     private double pow(double a, double b) {
         return Math.pow(a, b);
