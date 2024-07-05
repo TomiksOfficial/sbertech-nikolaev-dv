@@ -1,10 +1,9 @@
 package tomiks;
 
 public class Hyena {
-    public String sound() {
+    public void sound() {
         final String PHRASE = "laugh";
         System.out.println(PHRASE);
 
-        return PHRASE;
     }
 }
