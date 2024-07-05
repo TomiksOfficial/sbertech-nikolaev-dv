@@ -4,12 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Zoo {
-    private final List<Sounding> animals = new ArrayList<Sounding>(){{
-        add(new Cat());
-        add(new Dog());
-        add(new Donkey());
-        add(new Giraffe());
-    }};
+    private List<Sounding> animals;
+
+    public void init() {
+        animals = new ArrayList<Sounding>(){{
+            add(new Cat());
+            add(new Dog());
+            add(new Donkey());
+            add(new Giraffe());
+        }};
+    }
 
     public void soundAll() {
 //        for (int animalNumber = 0; animalNumber < animals.size(); animalNumber++) {
@@ -41,9 +45,5 @@ public class Zoo {
         animals.add(new Hyena()::sound);
 
         soundAll();
-    }
-
-    public static void main(String[] args) {
-        new Zoo().doProcess();
     }
 }
