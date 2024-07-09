@@ -10,6 +10,7 @@ public class SecondChildBase extends Base {
     }
 
     @TaskAnnotation(hours = 2, priority = 1, description = "Test2")
+    @TaskAnnotation(hours = 3, priority = 1, description = "TestRepeate3")
     public <T extends DataContainer> int doWorkTwo(T data) {
         System.out.println(data.getUnixTimestamp());
         return data.getUnixTimestamp();
