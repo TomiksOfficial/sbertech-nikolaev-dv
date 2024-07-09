@@ -17,6 +17,7 @@
         <module>generics</module>
         <module>annotations</module>
         <module>streams</module>
+        <module>reflection</module>
     </modules>
 
     <properties>
