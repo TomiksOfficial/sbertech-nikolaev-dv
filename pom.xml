@@ -15,6 +15,7 @@
         <module>exceptions</module>
         <module>lambdas</module>
         <module>annotations</module>
+        <module>streams</module>
     </modules>
 
     <properties>
