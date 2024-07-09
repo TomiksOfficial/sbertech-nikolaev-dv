@@ -7,17 +7,20 @@ class ServiceTest {
 
     @Test
     void validateServiceUtil() {
-        AuthService auth = new AuthService("auth");
+        final String AUTH_SERVICE = "auth";
+        final String DATA_SERVICE = "data";
 
-        String query = auth.serviceName + "::need authentication::login/::password/";
-        String response = auth.serviceName + "::password/test::login/admin";
+        AuthService auth = new AuthService(AUTH_SERVICE);
+
+        String query = AUTH_SERVICE + "::need authentication::login/::password/";
+        String response = AUTH_SERVICE + "::password/test::login/admin";
 
         Assertions.assertThat(ServiceUtil.useService(auth, query, response)).isEqualTo(true);
 
-        DataService data = new DataService("data");
+        DataService data = new DataService(DATA_SERVICE);
 
-        query = data.serviceName + "::data/some cool data";
-        response = data.serviceName + "::status/200";
+        query = DATA_SERVICE + "::data/some cool data";
+        response = DATA_SERVICE + "::status/200";
 
         Assertions.assertThat(ServiceUtil.useService(data, query, response)).isEqualTo(true);
     }
